@@ -14,8 +14,8 @@ services:
              python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./:/app
-      - my_media:/media
-      - my_static:/static
+      - my_media:/app/media
+      - my_static:/app/static
     depends_on:
       - db
 
